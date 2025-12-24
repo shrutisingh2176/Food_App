@@ -1,0 +1,30 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Akshay Saini ",
+  "keywords": [],
+  "homepage": "https://github.com/shrutisingh2176/Namaste-React#readme",
+  "bugs": {
+    "url": "https://github.com/shrutisingh2176/Namaste-React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrutisingh2176/Namaste-React.git"
+  },
+  "license": "ISC",
+  "author": "Shruti Singh",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "dependencies": {
+    "parcel": "^2.16.3",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
