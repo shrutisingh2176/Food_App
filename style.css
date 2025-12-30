@@ -23,9 +23,14 @@
 
 .res-card{
     width:200px;
-    height:400px;
+    
     padding:5px;
     margin:10px;
+    }
+
+.res-card>img{
+    height:150px;
+    width:100%;
     }
 
 .search{
