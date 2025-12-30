@@ -1,4 +1,4 @@
-import React from "react";
+
 import ReactDOM from "react-dom/client";
 
 
@@ -24,10 +24,13 @@ const styleCard = {
     backgroundColor: "#f0f0f0",
 }
 
+type RestaurantCardProps = {
+  resName: string;
+  cuisine: string;
+};
 
 
-
- const RestrauntCard = (props) =>{
+ const RestrauntCard = (props: RestaurantCardProps) =>{
     console.log(props);
     return(
         <div className="res-card" style={styleCard}>
@@ -70,7 +73,7 @@ const AppLayout =() => {
 }
 
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root")!);
 
   root.render(<AppLayout/>);
   
