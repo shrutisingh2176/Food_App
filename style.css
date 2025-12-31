@@ -37,6 +37,12 @@
     padding: 10px;
 }
 
+.filter-btn{
+    margin:10px;
+    padding:10px;
+    cursor: pointer;
+}
+
 .res-logo{
     width:100%;
     
