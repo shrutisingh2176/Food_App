@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
+   
 }
 .logo{
     width: 200px;
@@ -26,11 +27,16 @@
     
     padding:5px;
     margin:10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    
     }
 
 .res-card>img{
     height:150px;
     width:100%;
+    border-radius: 5px;
+   
     }
 
 .search{
@@ -42,6 +48,9 @@
     padding:10px;
     cursor: pointer;
 }
+.filter-btn:hover {
+    background-color: #888685;
+}
 
 .res-logo{
     width:100%;
@@ -51,9 +60,14 @@
 .res-card:hover{
     border: 1px solid black;
     cursor: pointer;
+   transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .res-container{
     display:flex;
     flex-wrap:wrap;
+    justify-content:center;
+    gap: 10px;
+
 }

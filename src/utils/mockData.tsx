@@ -525,7 +525,7 @@ const resList=[
                                 "type": "WEBLINK"
                                 },
                                 "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-                                    },
+                                },
                                 {
                                 "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
                                 "info": {
@@ -536,25 +536,25 @@ const resList=[
                                 "areaName": "Rohini",
                                 "costForTwo": "₹250 for two",
                                 "cuisines": [
-                                    "Fast Food",
-                                    "Snacks",
-                                    "Street Food"
+                                "Fast Food",
+                                "Snacks",
+                                "Street Food"
                                 ],
                                 "avgRating": 4.2,
                                 "parentId": "171215",
                                 "avgRatingString": "4.2",
                                 "totalRatingsString": "6.6K+",
                                 "sla": {
-                                    "deliveryTime": 36,
-                                    "lastMileTravel": 6.4,
-                                    "serviceability": "SERVICEABLE",
-                                    "slaString": "35-40 mins",
-                                    "lastMileTravelString": "6.4 km",
-                                    "iconType": "ICON_TYPE_EMPTY"
+                                "deliveryTime": 36,
+                                "lastMileTravel": 6.4,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "35-40 mins",
+                                "lastMileTravelString": "6.4 km",
+                                "iconType": "ICON_TYPE_EMPTY"
                                 },
                                 "availability": {
-                                    "nextCloseTime": "2025-12-31 07:00:00",
-                                    "opened": true
+                                "nextCloseTime": "2025-12-31 07:00:00",
+                                "opened": true
                                 },
                                 "badges": {
 
@@ -562,47 +562,47 @@ const resList=[
                                 "isOpen": true,
                                 "type": "F",
                                 "badgesV2": {
-                                    "entityBadges": {
-                                    "imageBased": {
+                                "entityBadges": {
+                                "imageBased": {
 
-                                    },
-                                    "textBased": {
+                                },
+                                "textBased": {
 
-                                    },
-                                    "textExtendedBadges": {
+                                },
+                                "textExtendedBadges": {
 
-                                    }
-                                    }
+                                }
+                                }
                                 },
                                 "aggregatedDiscountInfoV3": {
-                                    "header": "60% OFF",
-                                    "subHeader": "UPTO ₹120"
+                                "header": "60% OFF",
+                                "subHeader": "UPTO ₹120"
                                 },
                                 "orderabilityCommunication": {
-                                    "title": {
+                                "title": {
 
-                                    },
-                                    "subTitle": {
+                                },
+                                "subTitle": {
 
-                                    },
-                                    "message": {
+                                },
+                                "message": {
 
-                                    },
-                                    "customIcon": {
+                                },
+                                "customIcon": {
 
-                                    }
+                                }
                                 },
                                 "differentiatedUi": {
-                                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                                    "differentiatedUiMediaDetails": {
-                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                                    "lottie": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                "lottie": {
 
-                                    },
-                                    "video": {
+                                },
+                                "video": {
 
-                                    }
-                                    }
+                                }
+                                }
                                 },
                                 "reviewsSummary": {
 
@@ -612,9 +612,9 @@ const resList=[
 
                                 },
                                 "externalRatings": {
-                                    "aggregatedRating": {
-                                    "rating": "--"
-                                    }
+                                "aggregatedRating": {
+                                "rating": "--"
+                                }
                                 },
                                 "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
                                 },
@@ -627,10 +627,10 @@ const resList=[
                                 "type": "WEBLINK"
                                 },
                                 "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-                                    },
+                                },
 
                                 {
-                            "info": {
+                                "info": {
                                 "id": "253773",
                                 "name": "McDonald's",
                                 "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/9/e543a89e-4adc-4aec-a1c5-1170e099d257_253773.JPG",
@@ -666,8 +666,221 @@ const resList=[
                                 "type": "F",
                                 "badgesV2": {
                                 "entityBadges": {
-                                    "imageBased": {
+                                "imageBased": {
 
+                                },
+                                "textBased": {
+
+                                },
+                                "textExtendedBadges": {
+
+                                }
+                                }
+                                },
+                                "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                "lottie": {
+
+                                },
+                                "video": {
+
+                                }
+                                }
+                                },
+                                "reviewsSummary": {
+
+                                },
+                                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                                "restaurantOfferPresentationInfo": {
+
+                                },
+                                "externalRatings": {
+                                "aggregatedRating": {
+                                "rating": "--"
+                                }
+                                },
+                                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                                },
+                                "analytics": {
+                                "context": "seo-data-a3fa8408-fe0c-4412-a194-eb3fd55052cb"
+                                },
+                                "cta": {
+                                "link": "https://www.swiggy.com/city/delhi/mcdonalds-sector-10-rohini-rest253773",
+                                "type": "WEBLINK"
+                                }
+                                },
+                                {
+                                "info": {
+                                "id": "413816",
+                                "name": "Cheesecake & Co.",
+                                "cloudinaryImageId": "b318c0b4bc2169550145ace1d6e791a2",
+                                "locality": "Pitampura",
+                                "areaName": "Pitampura",
+                                "costForTwo": "₹350 for two",
+                                "cuisines": [
+                                "Bakery",
+                                "Snacks"
+                                ],
+                                "avgRating": 4.7,
+                                "veg": true,
+                                "parentId": "387417",
+                                "avgRatingString": "4.7",
+                                "totalRatingsString": "4.9K+",
+                                "sla": {
+                                "deliveryTime": 32,
+                                "lastMileTravel": 8.3,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "30-35 mins",
+                                "lastMileTravelString": "8.3 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                                },
+                                "availability": {
+                                "nextCloseTime": "2026-01-01 23:59:00",
+                                "opened": true
+                                },
+                                "badges": {
+                                "imageBadges": [
+                                {
+                                "imageId": "Ratnesh_Badges/Rx_Awards_2025/Cheesecake.png",
+                                "description": "Delivery!"
+                                },
+                                {
+                                "imageId": "newg.png",
+                                "description": "Gourmet"
+                                }
+                                ]
+                                },
+                                "isOpen": true,
+                                "type": "F",
+                                "badgesV2": {
+                                "entityBadges": {
+                                "imageBased": {
+                                "badgeObject": [
+                                {
+                                    "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Ratnesh_Badges/Rx_Awards_2025/Cheesecake.png"
+                                    }
+                                },
+                                {
+                                    "attributes": {
+                                    "description": "Gourmet",
+                                    "imageId": "newg.png"
+                                    }
+                                }
+                                ]
+                                },
+                                "textBased": {
+
+                                },
+                                "textExtendedBadges": {
+
+                                }
+                                }
+                                },
+                                "aggregatedDiscountInfoV3": {
+                                "header": "₹100 OFF",
+                                "subHeader": "ABOVE ₹199",
+                                "discountTag": "FLAT DEAL"
+                                },
+                                "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                "lottie": {
+
+                                },
+                                "video": {
+
+                                }
+                                }
+                                },
+                                "reviewsSummary": {
+
+                                },
+                                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                                "restaurantOfferPresentationInfo": {
+
+                                },
+                                "externalRatings": {
+                                "aggregatedRating": {
+                                "rating": "4.2",
+                                "ratingCount": "258"
+                                },
+                                "source": "GOOGLE",
+                                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                                },
+                                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                                },
+                                "analytics": {
+                                "context": "seo-data-a3fa8408-fe0c-4412-a194-eb3fd55052cb"
+                                },
+                                "cta": {
+                                "link": "https://www.swiggy.com/city/delhi/cheesecake-and-co-pitampura-rest413816",
+                                "type": "WEBLINK"
+                                }
+                                },
+                                {
+                                "info": {
+                                "id": "341033",
+                                "name": "Bakingo",
+                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/30/f0d529d9-6410-450f-9ae0-8b859f555908_341033.JPG",
+                                "locality": "Rithala",
+                                "areaName": "Rohini",
+                                "costForTwo": "₹300 for two",
+                                "cuisines": [
+                                "Bakery",
+                                "Desserts",
+                                "Beverages",
+                                "Snacks"
+                                ],
+                                "avgRating": 4.6,
+                                "parentId": "3818",
+                                "avgRatingString": "4.6",
+                                "totalRatingsString": "8.2K+",
+                                "sla": {
+                                "deliveryTime": 16,
+                                "lastMileTravel": 2.3,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "15-20 mins",
+                                "lastMileTravelString": "2.3 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                                },
+                                "availability": {
+                                "nextCloseTime": "2026-01-02 01:00:00",
+                                "opened": true
+                                },
+                                "badges": {
+                                "imageBadges": [
+                                    {
+                                    "imageId": "android/static-assets/icons/big_rx.png",
+                                    "description": "bolt!"
+                                    },
+                                    {
+                                    "imageId": "Rxawards/_CATEGORY-Desserts.png",
+                                    "description": "Delivery!"
+                                    }
+                                ]
+                                },
+                                "isOpen": true,
+                                "type": "F",
+                                "badgesV2": {
+                                "entityBadges": {
+                                    "imageBased": {
+                                    "badgeObject": [
+                                        {
+                                        "attributes": {
+                                            "description": "bolt!",
+                                            "imageId": "android/static-assets/icons/big_rx.png"
+                                        }
+                                        },
+                                        {
+                                        "attributes": {
+                                            "description": "Delivery!",
+                                            "imageId": "Rxawards/_CATEGORY-Desserts.png"
+                                        }
+                                        }
+                                    ]
                                     },
                                     "textBased": {
 
@@ -676,6 +889,10 @@ const resList=[
 
                                     }
                                 }
+                                },
+                                "aggregatedDiscountInfoV3": {
+                                "header": "60% OFF",
+                                "subHeader": "UPTO ₹120"
                                 },
                                 "differentiatedUi": {
                                 "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
@@ -701,333 +918,116 @@ const resList=[
                                 }
                                 },
                                 "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-                            },
-                            "analytics": {
+                                },
+                                "analytics": {
                                 "context": "seo-data-a3fa8408-fe0c-4412-a194-eb3fd55052cb"
-                            },
-                            "cta": {
-                                "link": "https://www.swiggy.com/city/delhi/mcdonalds-sector-10-rohini-rest253773",
+                                },
+                                "cta": {
+                                "link": "https://www.swiggy.com/city/delhi/bakingo-rithala-rohini-rest341033",
                                 "type": "WEBLINK"
-                            }
-                            },
-                            {
-                    "info": {
-                      "id": "413816",
-                      "name": "Cheesecake & Co.",
-                      "cloudinaryImageId": "b318c0b4bc2169550145ace1d6e791a2",
-                      "locality": "Pitampura",
-                      "areaName": "Pitampura",
-                      "costForTwo": "₹350 for two",
-                      "cuisines": [
-                        "Bakery",
-                        "Snacks"
-                      ],
-                      "avgRating": 4.7,
-                      "veg": true,
-                      "parentId": "387417",
-                      "avgRatingString": "4.7",
-                      "totalRatingsString": "4.9K+",
-                      "sla": {
-                        "deliveryTime": 32,
-                        "lastMileTravel": 8.3,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "30-35 mins",
-                        "lastMileTravelString": "8.3 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2026-01-01 23:59:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        "imageBadges": [
-                          {
-                            "imageId": "Ratnesh_Badges/Rx_Awards_2025/Cheesecake.png",
-                            "description": "Delivery!"
-                          },
-                          {
-                            "imageId": "newg.png",
-                            "description": "Gourmet"
-                          }
-                        ]
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            "badgeObject": [
-                              {
-                                "attributes": {
-                                  "description": "Delivery!",
-                                  "imageId": "Ratnesh_Badges/Rx_Awards_2025/Cheesecake.png"
                                 }
-                              },
-                              {
-                                "attributes": {
-                                  "description": "Gourmet",
-                                  "imageId": "newg.png"
+                                },
+                                {
+                                "info": {
+                                "id": "614573",
+                                "name": "Subway",
+                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/12/562eaeaa-aa9a-4b2e-b085-4a9c4161bd1f_614573.jpg",
+                                "locality": "Rohini",
+                                "areaName": "Rohini",
+                                "costForTwo": "₹350 for two",
+                                "cuisines": [
+                                "sandwich",
+                                "Salads",
+                                "wrap",
+                                "Healthy Food"
+                                ],
+                                "avgRating": 4.2,
+                                "parentId": "2",
+                                "avgRatingString": "4.2",
+                                "totalRatingsString": "2.6K+",
+                                "sla": {
+                                "deliveryTime": 15,
+                                "lastMileTravel": 1.2,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "10-15 mins",
+                                "lastMileTravelString": "1.2 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                                },
+                                "availability": {
+                                "nextCloseTime": "2026-01-02 04:00:00",
+                                "opened": true
+                                },
+                                "badges": {
+                                "imageBadges": [
+                                    {
+                                    "imageId": "android/static-assets/icons/big_rx.png",
+                                    "description": "bolt!"
+                                    }
+                                ]
+                                },
+                                "isOpen": true,
+                                "type": "F",
+                                "badgesV2": {
+                                "entityBadges": {
+                                    "imageBased": {
+                                    "badgeObject": [
+                                        {
+                                        "attributes": {
+                                            "description": "bolt!",
+                                            "imageId": "android/static-assets/icons/big_rx.png"
+                                        }
+                                        }
+                                    ]
+                                    },
+                                    "textBased": {
+
+                                    },
+                                    "textExtendedBadges": {
+
+                                    }
                                 }
-                              }
-                            ]
-                          },
-                          "textBased": {
+                                },
+                                "aggregatedDiscountInfoV3": {
+                                "header": "₹200 OFF",
+                                "subHeader": "ABOVE ₹399",
+                                "discountTag": "FLAT DEAL"
+                                },
+                                "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "lottie": {
 
-                          },
-                          "textExtendedBadges": {
+                                    },
+                                    "video": {
 
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "₹100 OFF",
-                        "subHeader": "ABOVE ₹199",
-                        "discountTag": "FLAT DEAL"
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "lottie": {
-
-                          },
-                          "video": {
-
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-
-                      },
-                      "externalRatings": {
-                        "aggregatedRating": {
-                          "rating": "4.2",
-                          "ratingCount": "258"
-                        },
-                        "source": "GOOGLE",
-                        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                      },
-                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-                    },
-                    "analytics": {
-                      "context": "seo-data-a3fa8408-fe0c-4412-a194-eb3fd55052cb"
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/city/delhi/cheesecake-and-co-pitampura-rest413816",
-                      "type": "WEBLINK"
-                    }
-                  },
-                  {
-                    "info": {
-                      "id": "341033",
-                      "name": "Bakingo",
-                      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/30/f0d529d9-6410-450f-9ae0-8b859f555908_341033.JPG",
-                      "locality": "Rithala",
-                      "areaName": "Rohini",
-                      "costForTwo": "₹300 for two",
-                      "cuisines": [
-                        "Bakery",
-                        "Desserts",
-                        "Beverages",
-                        "Snacks"
-                      ],
-                      "avgRating": 4.6,
-                      "parentId": "3818",
-                      "avgRatingString": "4.6",
-                      "totalRatingsString": "8.2K+",
-                      "sla": {
-                        "deliveryTime": 16,
-                        "lastMileTravel": 2.3,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "15-20 mins",
-                        "lastMileTravelString": "2.3 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2026-01-02 01:00:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        "imageBadges": [
-                          {
-                            "imageId": "android/static-assets/icons/big_rx.png",
-                            "description": "bolt!"
-                          },
-                          {
-                            "imageId": "Rxawards/_CATEGORY-Desserts.png",
-                            "description": "Delivery!"
-                          }
-                        ]
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            "badgeObject": [
-                              {
-                                "attributes": {
-                                  "description": "bolt!",
-                                  "imageId": "android/static-assets/icons/big_rx.png"
+                                    }
                                 }
-                              },
-                              {
-                                "attributes": {
-                                  "description": "Delivery!",
-                                  "imageId": "Rxawards/_CATEGORY-Desserts.png"
+                                },
+                                "reviewsSummary": {
+
+                                },
+                                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                                "restaurantOfferPresentationInfo": {
+
+                                },
+                                "externalRatings": {
+                                "aggregatedRating": {
+                                    "rating": "3.4",
+                                    "ratingCount": "18"
+                                },
+                                "source": "GOOGLE",
+                                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                                },
+                                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                                },
+                                "analytics": {
+                                "context": "seo-data-a3fa8408-fe0c-4412-a194-eb3fd55052cb"
+                                },
+                                "cta": {
+                                "link": "https://www.swiggy.com/city/delhi/subway-rohini-rest614573",
+                                "type": "WEBLINK"
                                 }
-                              }
-                            ]
-                          },
-                          "textBased": {
-
-                          },
-                          "textExtendedBadges": {
-
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "60% OFF",
-                        "subHeader": "UPTO ₹120"
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "lottie": {
-
-                          },
-                          "video": {
-
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-
-                      },
-                      "externalRatings": {
-                        "aggregatedRating": {
-                          "rating": "--"
-                        }
-                      },
-                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-                    },
-                    "analytics": {
-                      "context": "seo-data-a3fa8408-fe0c-4412-a194-eb3fd55052cb"
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/city/delhi/bakingo-rithala-rohini-rest341033",
-                      "type": "WEBLINK"
-                    }
-                  },
-                  {
-                    "info": {
-                      "id": "614573",
-                      "name": "Subway",
-                      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/12/562eaeaa-aa9a-4b2e-b085-4a9c4161bd1f_614573.jpg",
-                      "locality": "Rohini",
-                      "areaName": "Rohini",
-                      "costForTwo": "₹350 for two",
-                      "cuisines": [
-                        "sandwich",
-                        "Salads",
-                        "wrap",
-                        "Healthy Food"
-                      ],
-                      "avgRating": 4.2,
-                      "parentId": "2",
-                      "avgRatingString": "4.2",
-                      "totalRatingsString": "2.6K+",
-                      "sla": {
-                        "deliveryTime": 15,
-                        "lastMileTravel": 1.2,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "10-15 mins",
-                        "lastMileTravelString": "1.2 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2026-01-02 04:00:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        "imageBadges": [
-                          {
-                            "imageId": "android/static-assets/icons/big_rx.png",
-                            "description": "bolt!"
-                          }
-                        ]
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            "badgeObject": [
-                              {
-                                "attributes": {
-                                  "description": "bolt!",
-                                  "imageId": "android/static-assets/icons/big_rx.png"
-                                }
-                              }
-                            ]
-                          },
-                          "textBased": {
-
-                          },
-                          "textExtendedBadges": {
-
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "₹200 OFF",
-                        "subHeader": "ABOVE ₹399",
-                        "discountTag": "FLAT DEAL"
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "lottie": {
-
-                          },
-                          "video": {
-
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-
-                      },
-                      "externalRatings": {
-                        "aggregatedRating": {
-                          "rating": "3.4",
-                          "ratingCount": "18"
-                        },
-                        "source": "GOOGLE",
-                        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                      },
-                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-                    },
-                    "analytics": {
-                      "context": "seo-data-a3fa8408-fe0c-4412-a194-eb3fd55052cb"
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/city/delhi/subway-rohini-rest614573",
-                      "type": "WEBLINK"
-                    }
-                  },
+                                },
 
                                 ];
 export default resList;
