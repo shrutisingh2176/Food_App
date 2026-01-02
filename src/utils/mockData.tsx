@@ -117,9 +117,9 @@ const resList=[
                                     "Desserts",
                                     "Beverages"
                                 ],
-                                "avgRating": 4.3,
+                                "avgRating": 3.6,
                                 "parentId": "582792",
-                                "avgRatingString": "4.3",
+                                "avgRatingString": "3.6",
                                 "totalRatingsString": "264",
                                 "sla": {
                                     "deliveryTime": 22,
@@ -217,9 +217,9 @@ const resList=[
                                         "Italian",
                                         "Pizzas"
                                     ],
-                                    "avgRating": 4.3,
+                                    "avgRating": 3.9,
                                     "parentId": "4961",
-                                    "avgRatingString": "4.3",
+                                    "avgRatingString": "3.9",
                                     "totalRatingsString": "764",
                                     "sla": {
                                         "deliveryTime": 22,
