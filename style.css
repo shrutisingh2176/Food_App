@@ -71,3 +71,17 @@
     gap: 10px;
 
 }
+
+.shimmer-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap: 10px;
+}
+
+.shimmer-card{
+    margin:20px;
+    width: 200px;
+    height: 400px;
+    background-color: gray;
+}

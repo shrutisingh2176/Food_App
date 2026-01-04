@@ -1,10 +1,13 @@
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/mockData";
+//simport resList from "../utils/mockData";
 import { useState , useEffect} from "react";
+import Shimmer from "./Shimmer";
+
+
 
 // Local State Variable - Super powerul variable
 const Body = () =>{
-    let [listOfRestaurants , setListOfRestaurants]= useState(resList);
+    let [listOfRestaurants , setListOfRestaurants]= useState([]);
 
     useEffect(() =>{fetchData()},
     []);
@@ -16,6 +19,9 @@ const Body = () =>{
         setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
+    if (listOfRestaurants.length === 0) {
+        return <Shimmer />;
+    }
       return(
         <div className="Body" >
             <div className="filter">
@@ -37,6 +43,8 @@ const Body = () =>{
         </div>
     )
     }
+    
+
 
 
 
