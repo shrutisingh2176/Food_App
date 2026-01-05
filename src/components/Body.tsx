@@ -8,6 +8,13 @@ import Shimmer from "./Shimmer";
 // Local State Variable - Super powerul variable
 const Body = () =>{
     let [listOfRestaurants , setListOfRestaurants]= useState([]);
+    let [searchText, setSearchText]= useState("");
+    let [filteredRestaurants, setFilteredRestaurants]= useState([]);
+
+    // Whenever the state variable update - react re-renders the component
+
+
+
 
     useEffect(() =>{fetchData()},
     []);
@@ -29,19 +36,39 @@ const Body = () =>{
        return( listOfRestaurants.length ===0)? <Shimmer /> : ( 
         <div className="Body" >
             <div className="filter">
+                <div className="search">
+                    <input type="text"
+                     className="search-box"
+                      value={searchText} 
+                      onChange= {(e) => {
+                        setSearchText(e.target.value);
+                      }}/>
+                    <button className="search-btn" 
+                    onClick={() =>{
+                        //Filter the restaurant cards and update the UI
+                       const  filteredRestaurants=listOfRestaurants.filter((res) =>
+                         res.info.name.toLowerCase().includes(searchText.toLowerCase())
+                         ); 
+
+                    setFilteredRestaurants(filteredRestaurants);
+
+
+
+                    }}>Search</button>
+                </div>
             <button className= "filter-btn"
              onClick={() => 
             {   
                 const filteredList=listOfRestaurants.filter(
                 (res) => res.info.avgRating >4);
-                setListOfRestaurants(filteredList);
+                setFilteredRestaurants(filteredList);
                
 
              }}>Top Rated Restaurants</button>
 
             </div>
             <div className="res-container">
-                {listOfRestaurants.map(restaurant => (
+                {filteredRestaurants.map(restaurant => (
                     <RestaurantCard key={restaurant.info.id} resData={restaurant} resName={""} cuisine={""} avgRating={0} costForTwo={""} deliveryTime={0} /> ))}
             </div>
         </div>
@@ -52,15 +79,7 @@ const Body = () =>{
 
 
 
-type Restaurant = {
-    id: number;
-    name: string;
-    cuisine: string;
-};
 
-function setFilteredRestaurants(restaurants: Restaurant[]): void {
-    // implementation here
-}
 
 
 export default Body;
