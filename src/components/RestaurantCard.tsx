@@ -1,17 +1,11 @@
 import { CDN_URL } from "../utils/constants";
-
+import { Restaurant} from "../utils/types";
 
 
 type RestaurantCardProps = {
     
-        
-            resName: string;
-           cuisine: string;
-            avgRating: number;
-            costForTwo: string;
-            deliveryTime: number;
-             resData: any;
-    
+    resData: Restaurant;
+
         };
 
 

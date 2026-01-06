@@ -2,14 +2,14 @@ import RestaurantCard from "./RestaurantCard";
 //simport resList from "../utils/mockData";
 import { useState , useEffect} from "react";
 import Shimmer from "./Shimmer";
-
+import { Restaurant} from "../utils/types";
 
 
 // Local State Variable - Super powerul variable
 const Body = () =>{
-    let [listOfRestaurants , setListOfRestaurants]= useState([]);
+    let [listOfRestaurants , setListOfRestaurants]= useState<Restaurant[]>([]);
     let [searchText, setSearchText]= useState("");
-    let [filteredRestaurants, setFilteredRestaurants]= useState([]);
+    let [filteredRestaurants, setFilteredRestaurants]= useState<Restaurant[]>([]);
 
     // Whenever the state variable update - react re-renders the component
 
@@ -69,7 +69,7 @@ const Body = () =>{
             </div>
             <div className="res-container">
                 {filteredRestaurants.map(restaurant => (
-                    <RestaurantCard key={restaurant.info.id} resData={restaurant} resName={""} cuisine={""} avgRating={0} costForTwo={""} deliveryTime={0} /> ))}
+                    <RestaurantCard key={restaurant.info.id} resData={restaurant}  /> ))}
             </div>
         </div>
     )
