@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 import { useState , useEffect} from "react";
 import Shimmer from "./Shimmer";
 import { Restaurant} from "../utils/types";
+import { Link} from "react-router-dom";
 
 
 // Local State Variable - Super powerul variable
@@ -20,11 +21,11 @@ const Body = () =>{
     []);
 
         const fetchData = async () => {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7408388&lng=77.1125599&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
        
-        setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setFilteredRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
 
 
@@ -69,7 +70,10 @@ const Body = () =>{
             </div>
             <div className="res-container">
                 {filteredRestaurants.map(restaurant => (
-                    <RestaurantCard key={restaurant.info.id} resData={restaurant}  /> ))}
+                  <Link 
+                  key={restaurant.info.id}
+                  to={"/restaurants/" + restaurant.info.id}> 
+                   <RestaurantCard  resData={restaurant}  /> </Link>))}
             </div>
         </div>
     )

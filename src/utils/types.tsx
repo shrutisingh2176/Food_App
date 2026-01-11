@@ -11,3 +11,13 @@ export interface Restaurant {
             deliveryTime: number;
     };
 }};
+
+
+ export type Card = {
+  groupedCard?: any;
+  card?: {
+    card?: {
+      itemCards?: any[];
+    };
+  };
+};
