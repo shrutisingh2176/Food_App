@@ -100,3 +100,10 @@
     height: 40px;
     margin-top: 17px;
 }
+
+ .user-card{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+}
