@@ -2,9 +2,10 @@
  import UserClass from "./UserClass";
  import { Component } from "react";
  //import React from "react";
+ import {  UserProps} from "../utils/types";
 
     class About extends Component { // On place of Component we can also => React.Component
-        constructor(props: any) {
+        constructor(props: UserProps) {
             super(props);
            // console.log("Parent Constructor");
         }

@@ -1,49 +1,44 @@
 import {useState,useEffect} from "react";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
-import { MENU_API } from "../utils/constants";
+import useRestaurantMenu from "../utils/useRestaurantMenu";
 import {Card} from "../utils/types";
 
 
 const RestaurantMenu = () => {
 
-    const[resInfo, setResInfo]= useState<any>(null);
+        const{resId}= useParams <{resId:string}> ();
     
-    const{resId}= useParams();
     
-    console.log("resId:", resId);
 
-   useEffect(() => {
-            fetchMenu();
-        }, []);
-     const fetchMenu = async () => {
-    
-        const data = await fetch(
-          MENU_API + resId  
-        );
-      const json = await data.json();
-        console.log(json);
-        setResInfo(json.data);
-         };
+     if (!resId) return null;
+
+        const restaurantId = Number(resId.trim());
+       const resInfo = useRestaurantMenu(restaurantId);
+
+     
 
             if (resInfo === null) return <Shimmer />;
 
 
-           const { name, cuisines, costForTwo } = resInfo?.cards[2]?.card?.card?.info;
+           const { name,
+             cuisines =[], 
+             costForTwo,
+             } = resInfo?.cards[2]?.card?.card?.info ||{};
          
 
                     const categories =
             resInfo?.cards
-                ?.find((c: any) => c?.groupedCard)
+                ?.find((c: Card) => c?.groupedCard)
                 ?.groupedCard?.cardGroupMap?.REGULAR?.cards
                 ?.filter(
-                (c: any) =>
+                (c:any) =>
                     c?.card?.card?.["@type"] ===
                     "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
                 ) || [];
 
             const itemCards = categories.flatMap(
-            (c: any) => c?.card?.card?.itemCards || []
+            (c: Card) => c?.card?.card?.itemCards || []
             );
             console.log("itemCards:", itemCards);
 

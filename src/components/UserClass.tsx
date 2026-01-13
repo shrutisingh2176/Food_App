@@ -1,21 +1,11 @@
 
 import React from "react";
+import { UserProps, UserState } from "../utils/types";
 
-interface UserProps {
-  name: string;
-  location?: string;
-  
-}
-interface UserState {
-  userInfo: {
-    name: string;
-    location: string;
-  };
-}
 
 
 class UserClass extends React.Component<UserProps, UserState> {
-    constructor(props: any) {
+    constructor(props: UserProps) {
         super(props);
 
        this.state={

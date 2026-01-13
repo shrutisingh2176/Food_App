@@ -21,3 +21,16 @@ export interface Restaurant {
     };
   };
 };
+// UserClass & About
+ export interface UserProps {
+  name: string;
+  location?: string;
+  
+}
+// UserClass
+ export interface UserState {
+  userInfo: {
+    name: string;
+    location: string;
+  };
+}
