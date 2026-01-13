@@ -4,6 +4,7 @@ import { useState , useEffect} from "react";
 import Shimmer from "./Shimmer";
 import { Restaurant} from "../utils/types";
 import { Link} from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 // Local State Variable - Super powerul variable
@@ -27,6 +28,15 @@ const Body = () =>{
         setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
+
+    const onlineStatus = useOnlineStatus();
+    if (onlineStatus === false) {
+        return (
+            <h1>
+            🔴 You are offline! Please check your internet connection.
+            </h1>
+        );
+    }
 
 
     // Conditional Rendering 
