@@ -46,39 +46,39 @@ const Body = () =>{
      
        return( listOfRestaurants.length ===0)? <Shimmer /> : ( 
         <div className="Body" >
-            <div className="filter">
-                <div className="search">
+            <div className="filter flex">
+                <div className="search m-4 p-4">
                     <input type="text"
-                     className="search-box"
+                     className="search-box border border-solid border-black p-2"
                       value={searchText} 
                       onChange= {(e) => {
                         setSearchText(e.target.value);
                       }}/>
-                    <button className="search-btn" 
-                    onClick={() =>{
-                        //Filter the restaurant cards and update the UI
-                       const  filteredRestaurants=listOfRestaurants.filter((res) =>
-                         res.info.name.toLowerCase().includes(searchText.toLowerCase())
-                         ); 
 
-                    setFilteredRestaurants(filteredRestaurants);
+                    <button className="search-btn px-4 py-2 bg-gray-300  m-4 rounded-md " 
+                        onClick={() =>{
+                            //Filter the restaurant cards and update the UI
+                        const  filteredRestaurants=listOfRestaurants.filter((res) =>
+                            res.info.name.toLowerCase().includes(searchText.toLowerCase())
+                            ); 
 
+                       setFilteredRestaurants(filteredRestaurants);
+                   }}>Search</button>
 
-
-                    }}>Search</button>
                 </div>
-            <button className= "filter-btn"
-             onClick={() => 
-            {   
-                const filteredList=listOfRestaurants.filter(
-                (res) => res.info.avgRating >4);
-                setFilteredRestaurants(filteredList);
-               
+                <div>
+                    <button className= "px-4 py-2 bg-gray-400  m-4 rounded-md flex items-center justify-center mt-12 hover:bg-gray-500 r"
+                    onClick={() => 
+                    {   
+                        const filteredList=listOfRestaurants.filter(
+                        (res) => res.info.avgRating >4);
+                        setFilteredRestaurants(filteredList);
+                    
 
-             }}>Top Rated Restaurants</button>
-
+                    }}>Top Rated Restaurants</button>
+                </div>
             </div>
-            <div className="res-container">
+            <div className="res-container flex flex-wrap justify-center">
                 {filteredRestaurants.map(restaurant => (
                   <Link 
                   key={restaurant.info.id}
