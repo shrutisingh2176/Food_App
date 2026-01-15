@@ -3,9 +3,11 @@ import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import {Card} from "../utils/types";
+import MenuCategory from "./MenuCategory";
 
 
 const RestaurantMenu = () => {
+    console.log("RestaurantMenu component rendered");
 
         const{resId}= useParams <{resId:string}> ();
     
@@ -27,7 +29,7 @@ const RestaurantMenu = () => {
              } = resInfo?.cards[2]?.card?.card?.info ||{};
          
 
-                    const categories =
+        const categories =
             resInfo?.cards
                 ?.find((c: Card) => c?.groupedCard)
                 ?.groupedCard?.cardGroupMap?.REGULAR?.cards
@@ -40,26 +42,29 @@ const RestaurantMenu = () => {
             const itemCards = categories.flatMap(
             (c: Card) => c?.card?.card?.itemCards || []
             );
-            console.log("itemCards:", itemCards);
+
+            //console.log("Item Categories:", categories);
+            //console.log("All Menu Item Cards:", itemCards);
+           
 
          return  (
-           <div className="menu">
-                <h1>{name}</h1>               
-                <h3>{cuisines.join(", ")}</h3>  
-                <h3>{costForTwo}</h3> 
+           <div className="text-center">
+                <h1 className="font-bold my-8 text-2xl">{name}</h1>               
+                <h3 className="font-bold text-lg">{cuisines.join(", ")}</h3>  
+                <h3 className="font-bold text-lg"> Cost For Two: {costForTwo}</h3> 
 
 
-                    <h2>Menu</h2> 
+                    {categories.map((category: any) => < MenuCategory key={category.card.card.title} data={category?.card?.card} />)}
 
 
-                        <ul>
+                        {/* <ul>
                             {itemCards?.map((item:any, index: number) => (
                             <li key={`${item.card.info.id}-${index}`}>
                                 {item?.card?.info?.name} - {"Rs-"} 
                                 {item?.card?.info?.price / 100 || item?.card?.info?.price / 100}   
                             </li>
                             ))}
-                        </ul> 
+                        </ul>  */}
 
              </div>
                  );

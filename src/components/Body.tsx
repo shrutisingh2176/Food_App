@@ -15,7 +15,7 @@ const Body = () =>{
 
     // Whenever the state variable update - react re-renders the component
 
-
+   // console.log("Body Rendered", listOfRestaurants);
 
 
     useEffect(() =>{fetchData()},
@@ -67,7 +67,7 @@ const Body = () =>{
 
                 </div>
                 <div>
-                    <button className= "px-4 py-2 bg-gray-400  m-4 rounded-md flex items-center justify-center mt-12 hover:bg-gray-500 r"
+                    <button className= "px-4 py-2 bg-pink-200  m-4 rounded-md flex items-center justify-center mt-12 hover:bg-gray-500 r"
                     onClick={() => 
                     {   
                         const filteredList=listOfRestaurants.filter(
@@ -78,7 +78,7 @@ const Body = () =>{
                     }}>Top Rated Restaurants</button>
                 </div>
             </div>
-            <div className="res-container flex flex-wrap justify-center">
+            <div className="res-container flex flex-wrap justify-center  ">
                 {filteredRestaurants.map(restaurant => (
                   <Link 
                   key={restaurant.info.id}

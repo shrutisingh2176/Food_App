@@ -34,3 +34,25 @@ export interface Restaurant {
     location: string;
   };
 }
+
+ export interface MenuCategoryProps {
+  data: {
+    title?: string;
+    itemCards?: any[];
+  };
+}
+
+ interface MenuItem {
+  card: {
+    info: {
+      id: string;
+      name: string;
+      price: number;
+      imageId?: string;
+    };
+  };
+}
+
+ export interface ItemListProps {
+  items: MenuItem[];
+}
