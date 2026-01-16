@@ -68,15 +68,22 @@ const Body = () =>{
                 </div>
                 <div>
                     <button className= "px-4 py-2 bg-pink-200  m-4 rounded-md flex items-center justify-center mt-12 hover:bg-gray-500 r"
-                    onClick={() => 
-                    {   
-                        const filteredList=listOfRestaurants.filter(
-                        (res) => res.info.avgRating >4);
-                        setFilteredRestaurants(filteredList);
-                    
+                            onClick={() => 
+                            {   
+                                const filteredList=listOfRestaurants.filter(
+                                (res) => res.info.avgRating >4);
+                                setFilteredRestaurants(filteredList);
+                            
 
-                    }}>Top Rated Restaurants</button>
+                            }}>Top Rated Restaurants
+                    </button>
                 </div>
+                {/* <div>
+                    <label>UserName</label>
+                    <input className="border border-black p-2 "
+                    value={LoggedInUser}
+                     onChange ={(e) => setUserName(e.target.value)}/>
+                </div> */}
             </div>
             <div className="res-container flex flex-wrap justify-center  ">
                 {filteredRestaurants.map(restaurant => (

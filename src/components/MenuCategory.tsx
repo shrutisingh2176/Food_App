@@ -1,21 +1,25 @@
 import MenuItemList from "./MenuItemList";
  import { MenuCategoryProps } from "../utils/types";
 import { useState } from "react";
+    
 
 
-const MenuCategory = ({ data}: MenuCategoryProps) => {
+const MenuCategory = ({ data, showItems, setShowIndex, index }: MenuCategoryProps) => {
 
-    const [showItems, setShowItems] = useState(false);
+   // const [showItems, setShowItems] = useState(false);
 
-    const handleClick = () => {
-        setShowItems(!showItems);
-    };
+     const handleClick = (index: number) => {
+         setShowIndex(index);
+     };
+     // onClick={handleClick (index)}
     
     return (
-        <div>
+        <div>           
         
         <div className=" w-6/12 mx-auto my-4 bg-gray-200 shadow-lg p-4 ">
-        <div className="flex justify-between cursor-pointer "  onClick={handleClick} >
+        <div className="flex justify-between cursor-pointer " 
+         onClick={() => setShowIndex(prev => (prev === index ? null : index))} > 
+             
             <span className="font-bold text-lg">{data?.title} ({data?.itemCards?.length})</span> 
             <span>🔽</span>
             

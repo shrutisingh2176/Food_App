@@ -35,12 +35,12 @@ export interface Restaurant {
   };
 }
 
- export interface MenuCategoryProps {
-  data: {
-    title?: string;
-    itemCards?: any[];
-  };
-}
+//  export interface MenuCategoryProps {
+//   data: {
+//     title?: string;
+//     itemCards?: any[];
+  //   }; };
+
 
  interface MenuItem {
   card: {
@@ -56,3 +56,21 @@ export interface Restaurant {
  export interface ItemListProps {
   items: MenuItem[];
 }
+
+export interface MenuCategoryData {
+  title?: string;
+  itemCards?: any[];
+}
+
+export interface MenuCategoryProps {
+  data: MenuCategoryData;
+  index: number;
+  showItems: boolean;
+  setShowIndex: React.Dispatch<React.SetStateAction<number | null>>;
+
+}
+
+//(index: number | null) => void;
+
+
+

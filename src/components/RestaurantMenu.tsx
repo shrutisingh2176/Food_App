@@ -6,10 +6,13 @@ import {Card} from "../utils/types";
 import MenuCategory from "./MenuCategory";
 
 
+
 const RestaurantMenu = () => {
     console.log("RestaurantMenu component rendered");
 
         const{resId}= useParams <{resId:string}> ();
+
+        const [showIndex, setShowIndex] = useState<number | null>(null); // State to track which category to show , for controlled accordion
     
     
 
@@ -54,19 +57,24 @@ const RestaurantMenu = () => {
                 <h3 className="font-bold text-lg"> Cost For Two: {costForTwo}</h3> 
 
 
-                    {categories.map((category: any) => < MenuCategory key={category.card.card.title} data={category?.card?.card} />)}
+                    {categories.map((category: any,index:number) => 
+                    // Controlled Component approach
 
-
-                        {/* <ul>
-                            {itemCards?.map((item:any, index: number) => (
-                            <li key={`${item.card.info.id}-${index}`}>
-                                {item?.card?.info?.name} - {"Rs-"} 
-                                {item?.card?.info?.price / 100 || item?.card?.info?.price / 100}   
-                            </li>
-                            ))}
-                        </ul>  */}
-
-             </div>
+                    // < MenuCategory key={category.card.card.title} 
+                    //       data={category?.card?.card}
+                    //       showItems={index === showIndex ? true : false}
+                    //       setShowIndex={ () => setShowIndex(index)}
+                    //  />
+                                <MenuCategory
+                                key={category.card.card.title}
+                                data={category?.card?.card}
+                                index={index}
+                                showItems={showIndex === index}
+                                setShowIndex={setShowIndex}
+                                />
+                                )}
+                     
+                     </div>
                  );
                  };
 

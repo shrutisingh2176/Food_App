@@ -3,6 +3,7 @@
  import { Component } from "react";
  //import React from "react";
  import {  UserProps} from "../utils/types";
+ import UserContext from "../utils/UserContext";
 
     class About extends Component { // On place of Component we can also => React.Component
         constructor(props: UserProps) {
@@ -19,6 +20,12 @@
             return(
                 <div>
                     <h1>About Us</h1>
+                    {/* <div>
+                        LoggedIn User 
+                        <UserContext.Consumer>
+                            {(loggedInUser) => <h1>{loggedInUser}</h1>}
+                        </UserContext.Consumer>
+                    </div> */}
                     <h2> This is Namaste React Web Series </h2>
                     <UserClass name={"First"} location={"Delhi (class)"}/>
                      
