@@ -3,6 +3,7 @@ import { useState, useEffect, useContext} from "react";
 import{ Link} from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import  UserContext from "../utils/UserContext"
+import { useSelector} from "react-redux";
 
 
 const Header =() => {
@@ -20,17 +21,21 @@ const Header =() => {
     const onlineStatus = useOnlineStatus();
 
     const {loggedInUser}= useContext(UserContext);
-    console.log(loggedInUser);
+    //console.log(loggedInUser);
+
+    //Subscribing to the store using a Selector 
+    const cartItems = useSelector ((store) => store.cart.items)
+    console.log(cartItems);
 
 
     return(
-        <div className ="flex bg-blue-50 shadow-lg">
-            <div className="logo-container">
-                <img className = "w-50" src={LOGO_URL}/>
+        <div className ="flex bg-blue-300 shadow-lg h-44 w-full  ">
+            <div className="flex items-center shrink-0">
+                <img className = "w-auto h-44" src={LOGO_URL}/>
             </div>
-            <div className = " flex items-center justify-between w-full">
+            <div className = " flex items-center justify-between flex-1">
 
-                <ul className = "flex py-10 space-x-10 justify-between ml-100">
+                <ul className = "flex py-10 space-x-6 justify-between ml-100 whitespace-nowrap">
                     <li>
                        Online Status:  {onlineStatus ? "🟢" : "🔴"}
                     </li>
@@ -50,12 +55,14 @@ const Header =() => {
                      <Link to="/grocery"> Grocery</Link>
                     </li>
 
-                    <li> Cart </li>
+                    <li className=" text-2xl"> 
+                       <Link to ="/cart" >🛒({cartItems.length})</Link>
+                     </li>
 
                     <button className="login-btn" onClick={() => {
                         btnNameReact === "Login" ? setBtnNameReact("Logout") : setBtnNameReact("Login"); }}>
                             {btnNameReact}</button>
-                         <li className="px-4 font-bold">{loggedInUser} </li>
+                         <li className="px-4 font-bold ">{loggedInUser} </li>
                        
 
                 </ul>

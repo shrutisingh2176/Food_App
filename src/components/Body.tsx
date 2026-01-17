@@ -5,6 +5,7 @@ import Shimmer from "./Shimmer";
 import { Restaurant} from "../utils/types";
 import { Link} from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import {Provider} from "react-redux"
 
 
 // Local State Variable - Super powerul variable
@@ -38,10 +39,11 @@ const Body = () =>{
         );
     }
 
+    // const {loggedInUser, setUserName} = useContext(UserContext);
 
     // Conditional Rendering 
     //if (listOfRestaurants.length === 0) {
-       // return <Shimmer />; }
+    // return <Shimmer />; }
      
      
        return( listOfRestaurants.length ===0)? <Shimmer /> : ( 
