@@ -48,16 +48,17 @@ const Body = () =>{
      
        return( listOfRestaurants.length ===0)? <Shimmer /> : ( 
         <div className="Body" >
-            <div className="filter flex">
+            <div className=" flex justify-center">
                 <div className="search m-4 p-4">
                     <input type="text"
-                     className="search-box border border-solid border-black p-2"
+                     className="search-box border border-solid border-black  p-2 rounded-2xl  focus:outline-none focus:ring-2 focus:ring-pink-700"
+                     placeholder="  Search Restaurants..."
                       value={searchText} 
                       onChange= {(e) => {
                         setSearchText(e.target.value);
                       }}/>
 
-                    <button className="search-btn px-4 py-2 bg-gray-300  m-4 rounded-md " 
+                    <button className="search-btn px-5 py-2 border border-pink-300 bg-fuchsia-300  m-4 rounded-2xl hover:bg-pink-700 hover:text-amber-50  hover:shadow-pink-400" 
                         onClick={() =>{
                             //Filter the restaurant cards and update the UI
                         const  filteredRestaurants=listOfRestaurants.filter((res) =>
@@ -69,11 +70,11 @@ const Body = () =>{
 
                 </div>
                 <div>
-                    <button className= "px-4 py-2 bg-pink-200  m-4 rounded-md flex items-center justify-center mt-12 hover:bg-gray-500 r"
+                    <button className= "px-4 py-2 border border-pink-300  bg-fuchsia-300  m-4 rounded-2xl flex items-center justify-center mt-12 hover:bg-pink-700  hover:text-amber-50  hover:shadow-pink-400"
                             onClick={() => 
                             {   
                                 const filteredList=listOfRestaurants.filter(
-                                (res) => res.info.avgRating >4);
+                                (res) => res.info.avgRating >4.4);
                                 setFilteredRestaurants(filteredList);
                             
 
@@ -87,7 +88,7 @@ const Body = () =>{
                      onChange ={(e) => setUserName(e.target.value)}/>
                 </div> */}
             </div>
-            <div className="res-container flex flex-wrap justify-center  ">
+            <div className="res-container flex flex-wrap justify-center ">
                 {filteredRestaurants.map(restaurant => (
                   <Link 
                   key={restaurant.info.id}
@@ -95,7 +96,7 @@ const Body = () =>{
                    <RestaurantCard  resData={restaurant}  /> </Link>))}
             </div>
         </div>
-    )
+    )//flex flex-wrap justify-center
     }
     
 

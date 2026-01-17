@@ -29,29 +29,29 @@ const Header =() => {
 
 
     return(
-        <div className ="flex bg-blue-300 shadow-lg h-44 w-full  ">
+        <div className ="flex items-center bg-fuchsia-200 shadow-lg h-44 w-full  ">
             <div className="flex items-center shrink-0">
-                <img className = "w-auto h-44" src={LOGO_URL}/>
+                <img className = "w-auto h-32 rounded-xl object-contain  " src={LOGO_URL}/>
             </div>
             <div className = " flex items-center justify-between flex-1">
 
-                <ul className = "flex py-10 space-x-6 justify-between ml-100 whitespace-nowrap">
+                <ul className = "flex items-center space-x-6 justify-between ml-auto whitespace-nowrap  text-fuchsia-900 font-medium text-xl">
                     <li>
                        Online Status:  {onlineStatus ? "🟢" : "🔴"}
                     </li>
-                    <li>
+                    <li className="hover:text-pink-600 cursor-pointer  transition">
                       <Link to="/">Home</Link>
                     </li>
 
-                    <li> 
+                    <li className="hover:text-pink-600 cursor-pointer transition"> 
                         <Link to="/about"> About Us</Link>
                     </li>
 
-                    <li> 
+                    <li className="hover:text-pink-600 cursor-pointer transition"> 
                      <Link to="/contact"> Contact Us</Link>
                     </li>
 
-                    <li> 
+                    <li className="hover:text-pink-600 cursor-pointer transition"> 
                      <Link to="/grocery"> Grocery</Link>
                     </li>
 
@@ -59,7 +59,7 @@ const Header =() => {
                        <Link to ="/cart" >🛒({cartItems.length})</Link>
                      </li>
 
-                    <button className="login-btn" onClick={() => {
+                    <button className="login-btn border border-b-fuchsia-800 px-4 py-1 bg-white rounded-lg shadow text" onClick={() => {
                         btnNameReact === "Login" ? setBtnNameReact("Logout") : setBtnNameReact("Login"); }}>
                             {btnNameReact}</button>
                          <li className="px-4 font-bold ">{loggedInUser} </li>
