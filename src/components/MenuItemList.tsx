@@ -2,12 +2,12 @@ import { CDN_URL } from "../utils/constants";
 import { ItemListProps } from "../utils/types";
 import { useDispatch} from "react-redux";
 import { addItem} from "../utils/cartSlice"
-
+import { ItemType } from "../utils/types";
 const MenuItemList = ({ items }: ItemListProps) => {  
     //console.log("Menu Item List Data:", items); 
     
     const dispatch = useDispatch ();
-    const handleAddItem = (item) => {
+    const handleAddItem = (item:ItemType) => {
         // Dispatch an action 
         dispatch(addItem(item))
     }

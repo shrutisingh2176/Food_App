@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard,{withOffer} from "./RestaurantCard";
 //simport resList from "../utils/mockData";
 import { useState , useEffect} from "react";
 import Shimmer from "./Shimmer";
@@ -16,7 +16,9 @@ const Body = () =>{
 
     // Whenever the state variable update - react re-renders the component
 
-   // console.log("Body Rendered", listOfRestaurants);
+    console.log("Body Rendered", listOfRestaurants);
+
+    const RestaurantOffer = withOffer(RestaurantCard);
 
 
     useEffect(() =>{fetchData()},
@@ -93,7 +95,9 @@ const Body = () =>{
                   <Link 
                   key={restaurant.info.id}
                   to={"/restaurants/" + restaurant.info.id}> 
-                   <RestaurantCard  resData={restaurant}  /> </Link>))}
+                  {restaurant.info.aggregatedDiscountInfoV3 ? 
+                            <RestaurantOffer resData={restaurant}/> :
+                   <RestaurantCard  resData={restaurant}  />} </Link>))}
             </div>
         </div>
     )//flex flex-wrap justify-center

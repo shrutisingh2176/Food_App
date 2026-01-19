@@ -4,6 +4,7 @@ import{ Link} from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import  UserContext from "../utils/UserContext"
 import { useSelector} from "react-redux";
+import type { RootState} from "../utils/appStore"
 
 
 const Header =() => {
@@ -24,7 +25,7 @@ const Header =() => {
     //console.log(loggedInUser);
 
     //Subscribing to the store using a Selector 
-    const cartItems = useSelector ((store) => store.cart.items)
+    const cartItems = useSelector ((store:RootState) => store.cart.items)
     console.log(cartItems);
 
 

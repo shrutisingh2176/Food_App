@@ -2,11 +2,12 @@
  import  ItemList  from "./MenuItemList";
  import { clearCart } from "../utils/cartSlice";
  import { useDispatch} from "react-redux";
+ import type { RootState} from "../utils/appStore"
 
 
 const Cart = () => {
 
-    const cartItems = useSelector((store) => store.cart.items);
+    const cartItems = useSelector((store:any) => store.cart.items);
 
     const dispatch  = useDispatch();
 

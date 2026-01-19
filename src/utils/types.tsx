@@ -10,6 +10,11 @@ export interface Restaurant {
         sla:{
             deliveryTime: number;
     };
+     totalRatingsString: string;
+    aggregatedDiscountInfoV3: {
+      header: string;
+      subHeader: string;
+    }
 }};
 
 
@@ -73,4 +78,21 @@ export interface MenuCategoryProps {
 //(index: number | null) => void;
 
 
+ export interface ItemType {
+  id: string;
+  name: string;
+  price: number;
+  imageId?: string;
+}
 
+
+export interface CartItem {
+  id: string;
+  name: string;
+  price: number;
+  imageId?: string;
+}
+
+ export interface CartState {
+  items: CartItem[];
+}

@@ -34,5 +34,22 @@ const RestaurantCard = (props: RestaurantCardProps) =>{
         </div>
     )
  }
+  // Higher Order Component 
+  // input - RestaurantCard => RestaurantCardPromoted 
+
+  export const withOffer = (RestaurantCard: any) => {
+    return (props:RestaurantCardProps)=>{
+        const {resData} = props;
+        const offer = resData?.info?.aggregatedDiscountInfoV3;
+        return (
+            <div className="relative">
+                <label className="absolute z-10 top-4 left-2 bg-red-900 text-amber-50 rounded-xl px-3 py-1 font-semibold shadow">
+                    {offer.header} {offer.header ? ` - ${offer.subHeader} ` :""}
+                </label>
+                <RestaurantCard {...props} />
+            </div>
+        );
+    }
+}
 
  export default RestaurantCard;
