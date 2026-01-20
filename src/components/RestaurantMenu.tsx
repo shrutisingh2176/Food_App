@@ -54,7 +54,7 @@ const RestaurantMenu = () => {
            <div className="text-center">
                 <h1 className="font-bold my-8 text-2xl">{name}</h1>               
                 <h3 className="font-bold text-lg">{cuisines.join(", ")}</h3>  
-                <h3 className="font-bold text-lg"> Cost For Two: {costForTwo}</h3> 
+                <h3 className="font-bold text-lg"> Cost For Two: {costForTwo/100}</h3> 
 
 
                     {categories.map((category: any,index:number) => 

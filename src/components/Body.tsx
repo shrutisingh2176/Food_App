@@ -56,6 +56,7 @@ const Body = () =>{
                      className="search-box border border-solid border-black  p-2 rounded-2xl  focus:outline-none focus:ring-2 focus:ring-pink-700"
                      placeholder="  Search Restaurants..."
                       value={searchText} 
+                      data-testid="searchId"
                       onChange= {(e) => {
                         setSearchText(e.target.value);
                       }}/>

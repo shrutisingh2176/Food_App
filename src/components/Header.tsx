@@ -26,7 +26,7 @@ const Header =() => {
 
     //Subscribing to the store using a Selector 
     const cartItems = useSelector ((store:RootState) => store.cart.items)
-    console.log(cartItems);
+    //console.log(cartItems);
 
 
     return(
